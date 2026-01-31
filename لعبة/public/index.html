@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الأخيار والأشرار</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🎴 لعبة الأخيار والأشرار</h1>
+
+<div id="login">
+  <input id="name" placeholder="اسمك">
+  <input id="room" placeholder="Room ID">
+  <br>
+  <button onclick="joinRoom()">دخول الغرفة</button>
+</div>
+
+<div id="waiting" style="display:none;">
+  <h2>اللاعبون في الغرفة:</h2>
+  <ul id="players"></ul>
+  <button onclick="startGame()">ابدأ اللعبة</button>
+</div>
+
+<div id="roleBox" style="display:none;">
+  <h2>دورك السري:</h2>
+  <div id="role"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
